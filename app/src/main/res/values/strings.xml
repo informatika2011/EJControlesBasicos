@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EJ Controles Basicos</string>
+    <string name="click">Click</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+
+    <string name="btnSimple">Boton Simple Pulsado</string>
+
+    <string name="escribeTexto">Escribe un texto para COPIAR en la etiqueta de abajo </string>
+    <string name="escribe_algo"> Escribe algo</string>
+    <string name="copiar"> COPIAR TEXTO</string>
+
+    <string name="hasescrito">EL TEXTO ESCRITO ARRIBA ES: </string>
+
+    <string name="mensaje">ID opcion Seleccionada: </string>
+
+    <string name="info">Este programa ha sido desarrollado en el courso de Android para demostrar como se pueden lanzar actividades desde la actividad principal</string>
+</resources>

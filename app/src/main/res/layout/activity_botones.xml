@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView android:id="@+id/lblMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <Button android:id="@+id/btnBotonSimple"
+        android:text="@string/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblMensaje"
+        android:onClick="botonPulsado"/>
+
+    <ToggleButton android:id="@+id/BtnToggle"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBotonSimple"/>
+
+    <Switch android:id="@+id/BtnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnToggle"/>
+
+    <ImageButton
+        android:id="@+id/BtnImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="icono ok"
+        android:src="@drawable/ic_estrella"
+        android:layout_below="@id/BtnSwitch"
+        />
+
+    <Button android:id="@+id/BtnBotonMasImagen"
+        android:text="@string/click"
+        android:drawableRight="@drawable/ic_estrella"
+        android:drawablePadding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnImagen"/>
+
+    <ToggleButton android:id="@+id/BtnPersonalizado"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_style"
+        android:layout_below="@id/BtnBotonMasImagen"/>
+
+    <ImageButton android:id="@+id/BtnSinBorde2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_estrella"
+        style="?android:borderlessButtonStyle"
+        android:layout_below="@id/BtnPersonalizado"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:fabSize="mini"
+        app:borderWidth="0dp"
+        android:foregroundGravity="center"
+        android:layout_below="@+id/BtnSinBorde2"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+</RelativeLayout>

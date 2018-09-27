@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblMensajeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <CheckBox
+        android:id="@+id/chkMarcame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcmace"
+        android:layout_below="@id/lblMensajeCheckBox"/>
+
+    <TextView
+        android:id="@+id/lblSeleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkMarcame" />
+
+
+    <RadioGroup
+        android:id="@+id/rgOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/lblSeleccion">
+
+            <RadioButton
+                android:id="@+id/rbOpcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 1"/>
+
+            <RadioButton
+                android:id="@+id/rbOpcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 2"/>
+
+            <RadioButton
+                android:id="@+id/rbOpcion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset RadioButtons"
+        android:onClick="reset"
+        android:layout_below="@id/rgOpciones"/>
+
+    <Button
+        android:id="@+id/btnAcercaDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acerca de ..."
+        android:onClick="reset"
+        android:layout_below="@id/btnReset"/>
+
+
+</RelativeLayout>
